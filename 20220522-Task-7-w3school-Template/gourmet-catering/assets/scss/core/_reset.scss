@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.line {
+    border: 1px solid #eee;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.all_in {
+    margin: $margines-for-sections;
+    max-width: $max-width-for-sections;
+}

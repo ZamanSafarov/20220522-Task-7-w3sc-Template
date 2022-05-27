@@ -1,0 +1,17 @@
+{
+  "name": "20220522-task-7-w3school-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass-prod": "node-sass ./gourmet-catering/assets/scss/main.scss ./gourmet-catering/assets/css/style.min.css --output-style=compressed",
+    "compile-sass-dev": "node-sass ./gourmet-catering/assets/scss/main.scss ./gourmet-catering/assets/css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Zaman Safarov",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

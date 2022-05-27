@@ -1,0 +1,58 @@
+.fourth-sec {
+    padding: $padding-for-sections 16px;
+    line-height: $section-text_line-height;
+
+    &__main-text {
+        letter-spacing: $section-text_letter-spacing;
+        font-size: 36px;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+
+    &__first-p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    &__second-p {
+        color: #607d8b;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    &__third-p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    &__form {
+        &__input-div {
+            margin: 10px 0;
+
+            &__inputs {
+                font-family: "Times New Roman", Georgia, Serif;
+                font-size: 15px;
+                width: 100%;
+                padding: 20px 8px;
+                pad: 8px;
+                border: none;
+                border-bottom: 1px solid rgba(193, 193, 193, 0.598);
+            }
+        }
+
+        &__button {
+            padding: 12px 20px;
+            border: none;
+            font-size: 15px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        &__button:hover {
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+    }
+}

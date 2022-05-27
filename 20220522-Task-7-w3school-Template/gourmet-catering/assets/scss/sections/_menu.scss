@@ -1,0 +1,54 @@
+.third-sec {
+    display: flex;
+    padding: $padding-for-sections 0px;
+
+    @include forTablets {
+        display: block;
+    }
+
+    &__con--left {
+        width: 49.999%;
+        padding: $padding-for-divs;
+        letter-spacing: $section-text_letter-spacing;
+        ;
+        line-height: $section-text_line-height;
+
+        @include forTablets {
+            width: 100%;
+        }
+
+        &__main-text {
+            text-align: center;
+            font-weight: 400;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        &__texts {
+            font-weight: 400;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        &__paragraph {
+            color: #757575;
+            letter-spacing: 0;
+            font-size: 15px;
+            margin: 15px 0;
+        }
+    }
+
+    &__con--right {
+        padding: $padding-for-divs;
+        width: 49.999%;
+
+        @include forTablets {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+            opacity: 0.75;
+        }
+    }
+}

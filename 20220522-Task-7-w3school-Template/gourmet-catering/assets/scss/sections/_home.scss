@@ -1,0 +1,21 @@
+.first-sec {
+    margin: auto;
+    max-width: 1600px;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        min-width: 500px;
+
+        &__text-container {
+            &__text {
+                position: absolute;
+                color: rgb(110, 110, 110);
+                left: 24px;
+                letter-spacing: 5px;
+                bottom: 32px;
+                font-size: 36px;
+            }
+        }
+    }
+}

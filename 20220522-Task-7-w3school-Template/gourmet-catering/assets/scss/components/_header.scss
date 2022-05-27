@@ -1,0 +1,80 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    &__navs {
+        &__header-ul {
+            @include flexbox(center, space-between);
+            background-color: rgb(255, 255, 255);
+            &__nav {
+                position: relative;
+                z-index: 1;
+                list-style-type: none;
+                font-size: 15px;
+                padding: 7px 12px;
+                &--right {
+                    @include forPhones {
+                        transform: translateY(-100%);
+                        transition: transform 0.4s;
+                        z-index: -1;
+                        flex-wrap: wrap;
+                        position: absolute;
+                        text-align: center;
+                        width: 100%;
+                        top: 54px;
+                        background-color: rgba(255, 255, 255, 0.644);
+                        right: 0;
+                        -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+                        -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+                    }
+
+                    @include flexbox();
+                }
+                &__active{
+                    transform: translateY(0);
+                    transition: transform 0.7s;
+                }
+
+
+
+                &__list-item {
+                    padding: 12px 7px;
+                    width: 100%;
+                    &__link {
+                        color: rgb(50, 50, 50);
+                        letter-spacing: 4px;
+                        text-decoration: none;
+                        font-weight: 400;
+                        padding: 12px 10px;
+                    }
+                }
+
+                &__list-item:hover {
+                    background-color: #cccccc;
+                    @include forPhones{
+                        background-color: #cccccc7f;
+                    }
+                }
+            }
+            &__burger-menu{
+                font-size: 12px;
+                cursor: pointer;
+                margin-right: 10px;
+                display: none;
+                @include forPhones{
+                    display: block;
+                }
+                &__icon-close{
+                    font-size: 28px;
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
